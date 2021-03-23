@@ -35,7 +35,7 @@ router.post("/sign-up", async function (req, res, next) {
     data === null &&
     req.body.username.length > 0 &&
     req.body.email.length > 8 &&
-    req.body.password.length > 3
+    req.body.password.length > 8
   ) {
     var newUser = new userModel({
       username: req.body.username,
