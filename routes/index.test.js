@@ -26,18 +26,15 @@ test("Connexion de l'utilisateur Shakur réussie", async (done) => {
   done();
 });
 
-test("modifications du mot de passe", async (done) => {
+test("modifications du pseudo", async (done) => {
   await request(app)
     .post("/modifications")
     .send({
       token: "M9NGVIayYHGjh75ASTnYKq4GlHyBpPwk",
       usernameModified: "Biggy",
-      actualPasswordFromFront: "abcd",
-      newPassword: "abc",
-      confimedPassword: "abc",
     })
     .expect({
-      msg: `Modifications réalisées avec succès pour l'utilisateur ${token}`,
+      msg: `Modification du pseudo réalisée avec succès pour l'utilisateur ${token}`,
     });
 });
 
