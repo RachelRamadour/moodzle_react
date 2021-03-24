@@ -30,12 +30,14 @@ test("modifications du mot de passe", async (done) => {
   await request(app)
     .post("/modifications")
     .send({
+      token: "M9NGVIayYHGjh75ASTnYKq4GlHyBpPwk",
+      usernameModified: "Biggy",
       actualPasswordFromFront: "abcd",
       newPassword: "abc",
       confimedPassword: "abc",
     })
     .expect({
-      msg: `mot de passe créé avec succès pour l'utilisateur M9NGVIayYHGjh75ASTnYKq4GlHyBpPwk`,
+      msg: `Modifications réalisées avec succès pour l'utilisateur ${token}`,
     });
 });
 
