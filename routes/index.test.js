@@ -36,6 +36,7 @@ test("modifications du pseudo", async (done) => {
     .expect({
       msg: `Modification du pseudo réalisée avec succès pour l'utilisateur ${token}`,
     });
+  done();
 });
 
 module.exports = {

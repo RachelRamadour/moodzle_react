@@ -90,10 +90,15 @@ h1 {
   border-color: white;
   background-color: rgba(91, 99, 174, 0.3);
   margin: 30px;
+  min-width: 400px;
+  /* padding-top: 10%;
+  padding-bottom: 10%; */
 }
 
 .Sign .Login-input {
-  width: 250px;
+  width: 100%;
+  margin-top: 7%;
+  padding: 4%;
 }
 
 .button,
@@ -172,10 +177,10 @@ Link:active > a {
 }
 
 .logo {
-  max-height: 250px;
-  max-width: 250px;
-  margin-bottom: 1%;
-  margin-top: 30px;
+  max-height: 400px;
+  max-width: 400px;
+  margin-bottom: -2%;
+  margin-top: 40px;
 }
 
 .icon-today:hover {

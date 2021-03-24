@@ -107,6 +107,7 @@ function SettingsScreen(props) {
               <Input
                 className="Login-input"
                 editable
+                type="password"
                 placeholder="actuel mot de passe"
                 onChange={(pwd) => setActualPassword(pwd.target.value)}
                 value={actualPassword}
@@ -114,6 +115,7 @@ function SettingsScreen(props) {
               <Input
                 className="Login-input"
                 editable
+                type="password"
                 placeholder="nouveau mot de passe"
                 onChange={(pwd) => setPasswordModified(pwd.target.value)}
                 value={passwordModified}
@@ -121,6 +123,7 @@ function SettingsScreen(props) {
               <Input
                 className="Login-input"
                 editable
+                type="password"
                 placeholder="confirmation du nouveau mot de passe"
                 onChange={(pwd) => setConfirmPasswordModified(pwd.target.value)}
                 value={confirmPasswordModified}
