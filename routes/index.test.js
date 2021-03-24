@@ -13,27 +13,30 @@ test("Inscription avec un utilisateur déjà existant", async (done) => {
   done();
 });
 
-test("Connexion de l'utilisateur DiegoElPibeDeOro réussie", async (done) => {
+test("Connexion de l'utilisateur Shakur réussie", async (done) => {
   await request(app)
     .post("/sign-in")
-    .send({ email: "Diego@diego", password: "diego" })
+    .send({ email: "rramadour@gmail.com", password: "abcd" })
     .expect({
       result: true,
       msg: "login success",
-      username: "DiegoElPibeDeOro",
-      token: "3N6ERCZNZqIGbsdqhYcSGaRQTgQUalSq",
+      username: "Shakur",
+      token: "M9NGVIayYHGjh75ASTnYKq4GlHyBpPwk",
     });
   done();
 });
 
-test("Ajout d'une activité déjà existante", async (done) => {
+test("modifications du mot de passe", async (done) => {
   await request(app)
-    .post("/add-activity")
-    .send({ name: "Football", category: "sport" })
+    .post("/modifications")
+    .send({
+      actualPasswordFromFront: "abcd",
+      newPassword: "abc",
+      confimedPassword: "abc",
+    })
     .expect({
-      msg: "Football-sport déjà en base de données",
+      msg: `mot de passe créé avec succès pour l'utilisateur M9NGVIayYHGjh75ASTnYKq4GlHyBpPwk`,
     });
-  done();
 });
 
 module.exports = {
