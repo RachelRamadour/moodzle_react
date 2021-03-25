@@ -305,11 +305,11 @@ function ChartsYearScreen(props) {
       <div className="App">
         <NavBar />
 
-        <h1 style={{ margin: 0 }}>Ton Moodzle {yearDisplay}</h1>
+        <h1>Ton Moodzle {yearDisplay}</h1>
 
         <Card
           className="card"
-          style={{ width: 400, height: 650, marginBottom: "1%", padding: 5 }}
+          style={{ width: 400, height: 650, paddingTop: 5 }}
         >
           <Row className="calendar">
             <Col className="circleDay">{tableDay}</Col>
