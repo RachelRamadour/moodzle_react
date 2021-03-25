@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container } from "reactstrap";
+import { Container, Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSadCry,
@@ -139,13 +139,13 @@ function TodayScreen(props) {
                 style={{ color: "#54857F", margin: 10 }}
                 onClick={() => setMoodSelected(5)}
               />
-              <FontAwesomeIcon
+              <Button
                 className="icon-today-thumb"
-                icon={faSave}
-                size="4x"
-                style={{ color: "#5b63ae", margin: 10 }}
+                style={{ color: "#5b63ae" }}
                 onClick={() => handleNewMood()}
-              />
+              >
+                Valider
+              </Button>
             </div>
           </div>
         </Container>
