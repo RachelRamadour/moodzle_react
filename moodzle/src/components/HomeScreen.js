@@ -92,9 +92,13 @@ function HomeScreen(props) {
             />
 
             <Button
-              className="button"
               type="primary"
               onClick={() => handleSubmitSignIn()}
+              style={{
+                height: 50,
+                width: 150,
+                margin: 20,
+              }}
             >
               Se connecter
             </Button>
@@ -125,9 +129,9 @@ function HomeScreen(props) {
             />
 
             <Button
-              className="button"
               type="primary"
               onClick={() => handleSubmitSignUp()}
+              style={{ height: 50, width: 150, margin: 20 }}
             >
               S'inscrire
             </Button>

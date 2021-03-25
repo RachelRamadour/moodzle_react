@@ -101,7 +101,6 @@ h1 {
   padding: 4%;
 }
 
-.button,
 .ant-btn:hover,
 .ant-btn-primary:hover {
   min-width: 80px;
@@ -110,11 +109,11 @@ h1 {
   color: white;
 }
 
-.button:hover,
 .ant-btn,
 .ant-btn-primary {
   background-color: white;
   color: #5b63ae;
+  border: none;
 }
 
 .navbar {
