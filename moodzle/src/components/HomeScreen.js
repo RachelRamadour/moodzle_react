@@ -86,7 +86,7 @@ function HomeScreen(props) {
 
             <Input.Password
               className="Login-input"
-              placeholder="password"
+              placeholder="mot de passe"
               onChange={(e) => setPasswordSI(e.target.value)}
               value={passwordSI}
             />
@@ -119,7 +119,7 @@ function HomeScreen(props) {
 
             <Input.Password
               className="Login-input"
-              placeholder="password"
+              placeholder="mot de passe - 8 caractères minimum"
               onChange={(e) => setPassword(e.target.value)}
               value={password}
             />

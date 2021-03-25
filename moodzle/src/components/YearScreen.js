@@ -62,8 +62,12 @@ function ChartsYearScreen(props) {
       var emptyIcon = (
         <FontAwesomeIcon
           icon={faCircle}
-          size="1x"
-          style={{ color: "rgba(28, 160, 129, 0.3)" }}
+          style={{
+            height: 26,
+            marginLeft: 5,
+            marginBottom: -7,
+            color: "rgba(28, 160, 129, 0.3)",
+          }}
         />
       );
 
@@ -167,40 +171,60 @@ function ChartsYearScreen(props) {
             return (
               <FontAwesomeIcon
                 icon={faSadCry}
-                size="1x"
-                style={{ color: "#CD6133" }}
+                style={{
+                  height: 26,
+                  marginLeft: 5,
+                  marginBottom: -7,
+                  color: "#CD6133",
+                }}
               />
             );
           case 2:
             return (
               <FontAwesomeIcon
                 icon={faSadTear}
-                size="1x"
-                style={{ color: "#F0A07E" }}
+                style={{
+                  height: 26,
+                  marginLeft: 5,
+                  marginBottom: -7,
+                  color: "#F0A07E",
+                }}
               />
             );
           case 3:
             return (
               <FontAwesomeIcon
                 icon={faMeh}
-                size="1x"
-                style={{ color: "#F0D231" }}
+                style={{
+                  height: 26,
+                  marginLeft: 5,
+                  marginBottom: -7,
+                  color: "#F0D231",
+                }}
               />
             );
           case 4:
             return (
               <FontAwesomeIcon
                 icon={faSmile}
-                size="1x"
-                style={{ color: "#44B79D" }}
+                style={{
+                  height: 26,
+                  marginLeft: 5,
+                  marginBottom: -7,
+                  color: "#44B79D",
+                }}
               />
             );
           case 5:
             return (
               <FontAwesomeIcon
                 icon={faGrinBeam}
-                size="1x"
-                style={{ color: "#54857F" }}
+                style={{
+                  height: 26,
+                  marginLeft: 5,
+                  marginBottom: -7,
+                  color: "#54857F",
+                }}
               />
             );
         }
@@ -285,7 +309,7 @@ function ChartsYearScreen(props) {
 
         <Card
           className="card"
-          style={{ width: 300, marginBottom: "1%", padding: 5 }}
+          style={{ width: 400, height: 650, marginBottom: "1%", padding: 5 }}
         >
           <Row className="calendar">
             <Col className="circleDay">{tableDay}</Col>
